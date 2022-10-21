@@ -158,9 +158,7 @@ align-items:flex-start ;
 text-align: center;
 }
 .h4__catalog{
-display: flex;
-justify-content: center;
-align-items: center;
+text-align: center;
 margin-top: 97px;
 font-family: 'SemiBoldI',sans-serif;
 font-size: 40px;
@@ -227,7 +225,7 @@ font-family: 'Regular',sans-serif;
 font-size: 20px;
 font-weight: 400;
  line-height: 24px;
-width: 555px;
+
 
 }
 .call{
@@ -294,6 +292,9 @@ gap: 50px;
  .menu__link{
 font-size: 15px;
  }
+ .af{
+max-width: 100%;
+ }
 }
 @media screen and (max-width:768px) {
   .about__us{
@@ -304,7 +305,12 @@ text-align: center;
   }
   .cloth{
 flex-wrap: wrap;
+align-items: center;
+justify-content: center;
   }
+  .af{
+    max-width: 100%;
+     }
 }
 @media screen and (max-width:425px) {
     .head__nav{
@@ -321,13 +327,17 @@ flex-wrap: wrap;
     width: 100%;
 
     }
-    .box2{
-    padding-left: 60px;
+    .c{
+    flex-direction: column; 
+       align-items: flex-start;
+       gap:20px;
     }
-    .cloth__blx{
-    padding-left: 70px;
-    }
+    .af{
+        max-width: 100%;
+         }
+
 }
+
 @media screen and (max-width:375px) {
     .h3__pic{
         font-size: 20px;
@@ -336,10 +346,8 @@ flex-wrap: wrap;
         width: 100%;
     
         }
-        .box2{
-        padding-left: 60px;
-        }
-        .cloth__blx{
-        padding-left: 70px;
-        }
+        .af{
+            max-width: 100%;
+             }
+ 
 }
