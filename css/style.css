@@ -7,8 +7,7 @@ padding: 0;
 box-sizing: border-box;
 }
 .head {
-padding-left:  165px;
-padding-right: 165px;
+
 background: #3E8989;
 height: 100px;
 
@@ -121,7 +120,7 @@ margin: 0 auto;
 }
 .about__us{
 display: flex;
-
+align-items: center;
 justify-content: center;
     padding-top: 50px;
 gap: 20px;
@@ -139,7 +138,7 @@ justify-content: center;
 .box2{
 display: flex;
 align-items:flex-start ; 
- width: 545px;
+
  flex-direction: column;
 
 }
@@ -156,7 +155,7 @@ align-items:flex-start ;
     font-weight: 400;
     line-height: 21px;
     margin-top: 20px;
-
+text-align: center;
 }
 .h4__catalog{
 display: flex;
@@ -213,11 +212,15 @@ color:  #B4436C;
 
 .contact{
 display: flex;
-margin-top: 50px;
+
 justify-content: space-between;
 }
 .c{
 margin-bottom: 105px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 20px;
 }
 .contact__p{
 font-family: 'Regular',sans-serif;
@@ -236,9 +239,12 @@ width: 555px;
 
 
 }
-.gmail{
+.gmail1{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+}
+.gmail{
+
     font-family:'Regular',sans-serif ;
 font-size: 20px;
 font-weight: 400;
@@ -288,4 +294,52 @@ gap: 50px;
  .menu__link{
 font-size: 15px;
  }
+}
+@media screen and (max-width:768px) {
+  .about__us{
+    flex-direction: column;
+  }  
+  .pic__p{
+text-align: center;
+  }
+  .cloth{
+flex-wrap: wrap;
+  }
+}
+@media screen and (max-width:425px) {
+    .head__nav{
+    flex-direction: column;
+    gap: 25px;
+    }
+    .head{
+    height: 190px;
+    }
+    .h3__pic{
+    font-size: 30px;
+    }
+    .box1{
+    width: 100%;
+
+    }
+    .box2{
+    padding-left: 60px;
+    }
+    .cloth__blx{
+    padding-left: 70px;
+    }
+}
+@media screen and (max-width:375px) {
+    .h3__pic{
+        font-size: 20px;
+        }
+        .box1{
+        width: 100%;
+    
+        }
+        .box2{
+        padding-left: 60px;
+        }
+        .cloth__blx{
+        padding-left: 70px;
+        }
 }
