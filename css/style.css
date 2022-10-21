@@ -16,16 +16,16 @@ height: 100px;
 .head__nav {
 display: flex;
 align-items: center;
-justify-content: space-around;
+justify-content: space-between;
+padding-top: 37px;
 
 }
 .menu{
 display: flex;
-margin-left: 290px;
-margin-right: 182px;
+gap: 30px;
 }
 .menu__list {
-padding: 36px 30px 46px;
+padding-bottom: 5px;
 border-bottom: 2px solid transparent;
 transition: 0.2s;
 }
@@ -172,27 +172,25 @@ color: #3E8989;
 }
 .cloth{
 display: flex;
-align-items: center;
-justify-content: center;
-gap: 40px;
-margin-top: 53px;
-}
-.cloth__blx{
-    max-width: 263px;
-gap: 21px;
-background: #FFFFFF;
-}
-.cloth__catalog{
-    margin: 2px 32px;
-}
-.catalog__ul{
-display: flex;
-align-items: center;
 justify-content: space-between;
-gap: 180px;
+margin-top: 53px;
+} 
+.img__box{
+    padding: 2px 32px;
 }
-.menu__list{
-    gap: 201px;
+.img__box2{
+    padding: 77.5px 22.5px;
+
+}
+.img__box3{
+    padding: 75px 1px 75px 2px;
+}
+.img__box4{
+    padding: 19px 0;
+}
+
+.p__list{
+ text-align: center;
     font-family: 'SemiBoldI',sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -212,6 +210,7 @@ color:  #B4436C;
   margin-top: 100px;
     
 }
+
 .contact{
 display: flex;
 margin-top: 50px;
@@ -281,4 +280,12 @@ gap: 6px;
     line-height: 17px;
 color: #FFFFFF;
     
+}
+@media screen and (max-width:1024px) {
+ .head__nav{
+gap: 50px;
+ }
+ .menu__link{
+font-size: 15px;
+ }
 }
